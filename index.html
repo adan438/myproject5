@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   
+    <title>ADAN PROJECT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="text" class=""> This is a sample Paragraph.</p>
+        <input type="text" id="classInput" placeholder="הזן שם מחלקה">
+        <button onclick="addClass()">הוסף מחלקה</button>
+    </div>
+    
+
+    <div class="container">
+        <button onclick="toggleVisibility('section1')">Toggle Section 1</button>
+        <button onclick="toggleVisibility('section2')">Toggle Section 2</button>
+        <button onclick="toggleVisibility('section3')">Toggle Section 3</button>
+        <div id="section1" class="section visible">
+            <p>Content of Section 1</p>
+        </div>
+        <div id="section2" class="section hidden">
+            <p>Content of Section 2</p>
+        </div>
+        <div id="section3" class="section hidden">
+            <p>Content of Section 3</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <button id="myButton" onclick="changeTextAndDisable()">לחץ עליי</button>
+    </div>
+
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>
